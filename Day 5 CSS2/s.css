@@ -1,0 +1,76 @@
+*{
+  font-family: fantasy;
+}
+h3{
+  color: rgb(150,0,0);
+}
+h1{
+  color: #b92b27;
+}
+#login{
+  background-color: white;
+}
+#signup{
+  background-color: black;
+  color: white;
+}
+.uv{
+  color: red;
+  background-color: skyblue;
+}
+.post a{
+  color: white;
+  background-color: #d14444;
+}
+nav a{
+  color: purple;
+}
+p + h3 {
+  text-decoration: underline;
+}
+.uv + button{
+  background-color: skyblue;
+  color: purple;
+}
+div > input{
+  background-color: azure;
+}
+input[type="text"]{
+  color: red;
+}
+input[type="password"]{
+  color: blue;
+}
+input[type]{
+  background-color: azure;
+}
+button:hover{
+  background-color: black;
+  color: white;
+}
+h3:hover{
+  text-decoration: line-through;
+}
+button:active{
+  background-color: hotpink;
+  color: black;
+}
+p:active{
+  color: green;
+}
+input[type="radio"]:checked + label {
+  color: purple;
+  font-weight: bold;
+}
+div:nth-of-type(2){
+  background-color: #da6666c9
+}
+h1::first-letter{
+  color: green;
+}
+P::first-line{
+  color: purple;
+}
+p::selection{
+  background-color: #f2f258;
+}

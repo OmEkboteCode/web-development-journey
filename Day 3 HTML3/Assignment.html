@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<!--   <form action="/server">
+  <div>
+    <table border="black">
+      <caption>Student Information</caption>
+      <thead>
+        <tr>
+
+          <th rowspan="2">Name</th>
+          <th colspan="2">Address</th>
+        </tr>
+        <tr>
+          <th>City</th>
+          <th>House</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="6">Info</th>
+          <td>A</td>
+          <td>Delhi</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>Mumbai</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>Kolkata</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>Pune</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <table border="1">
+      <thead>
+          <tr>
+            <th rowspan="6">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+          </tr>
+          <tr>
+            <th>City</th>
+            <th>House</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+          </tr>
+        
+          <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+          </tr>
+        
+          <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+          </tr>
+        
+          <tr>
+            <td>D</td>
+            <td>Pune</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</form> -->
+    <form action="/server">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user">
+      </div>
+      <div>
+        Sex:
+        <input type="radio" name="sex" id="male" value="m">
+        <label for="male">male</label>
+        <input type="radio" name="sex" id="female" value="f">
+        <label for="female">female</label>
+      </div>
+      <div>
+        Country:
+        <select name="country" id="country">
+        <option value="select">Select an option</option>
+        <option value="ind">India</option>
+        <option value="USA">USA</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Message:</label> <br>
+        <textarea id="message" name="message" rows="4"cols="30"></textarea>
+      </div>
+      <div>
+        <input type="checkbox" name="sub" id="sub">
+        <label for="sub">Subscribe?</label>
+      </div>
+      <button>Submit</button>
+    </form>
+    <hr>
+    <form action="/server">
+      <h2>Feedback Form</h2>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user" placeholder="Write your name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Write your email">        
+        <br>
+        <label for="message">Message:</label> <br>
+        <textarea id="message" name="message" rows="4"cols="30"></textarea>
+        <br>
+        Rate us out of 5:<br>
+        <input type="radio" name="rate" id="1" value="1">
+        <label for="1">1</label><br>
+        <input type="radio" name="rate" id="2" value="2">
+        <label for="2">2</label><br>
+        <input type="radio" name="rate" id="3" value="3">
+        <label for="3">3</label><br>
+        <input type="radio" name="rate" id="4" value="4">
+        <label for="4">4</label><br>
+        <input type="radio" name="rate" id="5" value="5">
+        <label for="5">5</label><br>
+      </div>
+      <button>Send your message</button>
+    </form>
+  </body>
+</html>

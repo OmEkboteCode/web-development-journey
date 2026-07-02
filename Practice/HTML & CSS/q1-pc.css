@@ -1,0 +1,55 @@
+body{
+    padding:30px;
+}
+.profile{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 15px;
+    /* box-shadow: 2px 5px 10px black; */
+    font-family: 'Times New Roman', serif;
+    transition: transform 1s, box-shadow 0.5s;
+    padding-bottom: 20px;
+    
+}
+
+p, h2{
+    padding-bottom: 20px; 
+    text-align: center;
+}
+
+h2{
+    margin-bottom:10px;
+}
+
+p{
+    margin-bottom:20px;
+}
+
+img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+h1{
+    font-family: 'Times New Roman';
+}
+
+.profile:hover{
+    box-shadow: 2px 5px 10px black;
+    transform: scale(1.03);
+    
+}
+
+button{
+    background-color: #3030cf;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 2px black;
+}

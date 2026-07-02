@@ -1,0 +1,18 @@
+.article{
+    background-color: #F5F5F5;
+    border: 2px solid black;
+    font-family: serif;
+    text-align: left;
+}
+
+h1{
+    color: #FF5722;
+    font-weight: 700;
+}
+h2{
+    color: #303841;
+}
+a{
+    color: #76ABAE;
+    text-decoration: none;
+}

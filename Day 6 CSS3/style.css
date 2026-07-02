@@ -1,0 +1,29 @@
+div{
+  height: 200px;
+  width: 450px;
+  background-color: lightpink;
+/*   border-width:5px;
+border-style: solid;
+border-color: black; */
+  border: 5px solid black;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin: 40px 20px 30px 40px;
+}
+h1{
+  /* border-width: 2px;
+  border-style: dashed;
+  border-color: rebeccapurple; */
+  border: 2px double darkseagreen;
+  margin: ;
+}
+
+button{
+  background-color: #5D66C4;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 0px 30px 0px 30px;
+}
+  

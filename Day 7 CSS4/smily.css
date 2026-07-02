@@ -1,0 +1,39 @@
+#round{
+    width: 300px;
+    height: 300px;
+    background-color: gold;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 50px 0px 0px 50px;
+}
+#le{
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    left: 130px;
+}
+#re{
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    left: 250px;
+}
+#smile{
+    width: 150px;
+    height: 30px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top: 270px;
+    left: 130px;
+    
+}

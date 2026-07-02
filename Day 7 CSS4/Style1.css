@@ -1,0 +1,11 @@
+
+div{
+    height: 200px;
+    width: 400px;
+    background-color: #D51C39;
+    margin: 10px auto;
+    background-image: url("sky.jpeg");
+    background-size: cover;
+}
+
+

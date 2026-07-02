@@ -1,0 +1,22 @@
+div{
+    width: 400px;
+    height: 100px;
+    margin: 50px 0 50px 50px;
+    padding: 100px;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.fire{
+    border: 
+    background-color: #f11313;
+}
+.water{
+    border: 2px dashed black;
+    background-color: royalblue;
+    border-radius: 15px;
+}
+.earth{
+    border: 2px dotted black;
+    background-color: #9b4609;
+    border-radius: 50px;
+}

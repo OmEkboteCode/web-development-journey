@@ -1,0 +1,19 @@
+div{
+  background-color: yellow;
+  color: skyblue;
+}
+p{
+  color: blue;
+}
+form{
+  color: purple;
+}
+input{
+  background-color: ghostwhite;
+}
+button{
+  background-color: green;
+}
+button:hover{
+  background-color: darkgreen;
+}

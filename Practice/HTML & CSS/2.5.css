@@ -1,0 +1,14 @@
+.card{
+    width: 200px;
+    border: 2px solid black;
+    margin: 30px;
+    padding: 10px;
+}
+button{
+    width: 150px;
+    
+    border-radius: 5px;
+    background-color: skyblue;
+    margin-right: 10px;
+    display: inline-block;
+}

@@ -1,0 +1,35 @@
+#container{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+    align-content: flex-start;
+}
+#org {
+    align-self: flex-start;
+    /* flex-basis: 50px; */
+    /* /* flex-grow: 1; */
+    /* flex: 2 2 100px; */ 
+}
+#blu{
+    /* flex-basis: 400px; */
+    /* flex-grow: 2; */
+    /* flex: 2; */
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height: 100px;
+    width: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}

@@ -1,0 +1,30 @@
+.badge{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    border: 1px solid black;
+    margin-right: 50px;
+    text-align: center;
+    
+}
+
+.html{
+    background-color: orange;
+}
+.css{
+    background-color: blue;
+}
+.python{
+    background-color: yellow;
+}
+.bootstrap{
+    background-color: #6e1ebe;
+}
+
+.badge:hover{
+    background-color: black;
+    color: white;
+}

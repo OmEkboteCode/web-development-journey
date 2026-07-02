@@ -1,0 +1,128 @@
+body{
+    background-color: black;
+    color: white;
+}
+span{
+    font-weight: 800;
+}
+
+div~p{
+    color: orangered;
+}
+
+label[for="sunny"]{
+    color: blue;
+}
+
+.container{
+    border: 2px solid black;
+    width: 600px;
+    background-color: skyblue;
+    /* border-radius: 50% 20% / 10% 40%; */
+    padding: 20px;
+    margin: 20px 20px 40px 60px;
+    /* transition-property: background-color, color; */
+    transition: all 1s ease 0.2s;
+    box-shadow: 2px 3px 15px blue;
+    
+}
+
+.container:hover{
+    background-color: coral;
+    transform: scale(1.03);
+    color: purple;
+    box-shadow: 4px 6px 20px white;
+}
+.image{
+    width: 500px;
+    height: 300px;
+    border: 2px solid white;
+    background-color: azure;
+    background-image: url(man.jpeg);
+    margin: 40px;
+    background-size: cover;
+}
+
+.box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid white;
+    background-color: azure;
+    position: relative;
+    left: 80px;
+    box-shadow: 4px 6px 20px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    align-items: start;
+    
+}
+
+
+.item{
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    /* flex: 2 2 200px; */
+    
+
+    
+}
+.one{
+    background-color: #FF0052;
+    grid-column: 1/span 7;
+    grid-row: 1/span 2;
+    
+}
+.two{
+    background-color: #FFD400;
+    grid-column: 8;
+    grid-row: 1/span 6;
+}
+.three{
+    background-color: #00C68D;
+    grid-row: 3/span 4;
+}
+.four{
+    background-color: #0055DA;
+    grid-column: 2/span 6;
+    grid-row: 3/span 4;
+}
+
+
+.grid{
+    display: grid;
+    width: 800px;
+    height: 600px;
+    margin: 50px;
+    background-color: silver;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.Box{
+    /* width: 300px;
+    height: 100px; */
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    
+}
+
+@keyframes Animate{
+    from{
+        transform: scale(1);
+        box-shadow: 2px 2px 8px white;
+    }
+    to{
+        transform: scale(1.04);
+        box-shadow: 4px 6px 20px white;
+        background-color: black}
+    }
+}
+

@@ -1,0 +1,31 @@
+#blog{
+    background-color: #FCF5EE;
+    font-family: serif;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 15px;
+}
+
+h1{
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #850E35;
+}
+
+article p{
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline red;
+}
+
+h2{
+    color: #EE6983;
+}
+h3{
+    color: #CB2957;
+}

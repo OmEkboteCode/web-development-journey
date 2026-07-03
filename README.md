@@ -1,12 +1,31 @@
-# <i>Sigma 12 Journey</i>
+# 🌐 Web Development Journey
 
-This repository contains my learning journey through the Sigma 12 Web Development course.
+This repository documents my journey of learning web development from the ground up.
 
-Topics:
+## 📚 Technologies
+
 - HTML
 - CSS
-- Bootstrap
 - JavaScript
-- Future modules
+- Bootstrap
+- Future: React
+- Future: Node.js
+- Future: Express
+- Future: MongoDB
 
-Built while learning.
+## 📂 Repository Structure
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- Practice
+- Projects
+- Engineering Log
+
+## 🎯 Goal
+
+To build a strong foundation in web development through consistent practice, projects, and documentation while following the Sigma 12 course.
+
+---
+Learning one commit at a time.

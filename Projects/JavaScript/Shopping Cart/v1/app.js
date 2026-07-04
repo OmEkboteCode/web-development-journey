@@ -47,6 +47,30 @@ while(true){
                         }
                 }
         }
+        else if (option === "remove product"){
+                if (cart.length === 0){
+                        console.log("Cart is empty")
+                        
+                }
+                else{
+                        console.log("YOUR CART")
+                        
+                        for (let idx = 0; idx < cart.length; idx++){
+                                console.log(`${idx + 1}. ${cart[idx][0]} Stars: ${cart[idx][1]}`)
+                        }
+                        let delNum = parseInt(prompt("Please enter the number of the product you want to remove"));
+                                while (delNum > cart.length || delNum <= 0){
+                                        console.log("Invalid number. Please try again");
+                                        delNum = parseInt(prompt("Please enter the number of the product you want to remove"));
+                                }
+                        cart.splice(delNum - 1, 1)}
+                        console.log(`Product successfully removed`);
+                        for (let idx = 0; idx < cart.length; idx++){
+                                console.log(`${idx + 1}. ${cart[idx][0]}`)
+                        }
+                        
+                }
+        }
         
         else{
                 console.log("Feature not implemented yet.")
@@ -62,6 +86,13 @@ while(true){
 
 alpha1 = [['a', 1, 'A'], ['b', 2 , 'B'], ['c', 3, 'C']];
 
-for (let el of alpha1){
-        console.log(el[0])
+// for (let el of alpha1){
+//         console.log(el[0])
+// }
+let delNumn = 2;
+
+console.log(`Product ${alpha1.splice(delNum , 1)} successfully removed`)
+console.log(alpha1)
+for (let idx = 0; idx < alpha1.length; idx++){
+        console.log(`${idx + 1}. ${alpha1[idx][0]} Stars: ${alpha1[idx][1]}`)
 }

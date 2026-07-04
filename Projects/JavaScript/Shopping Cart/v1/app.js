@@ -35,7 +35,18 @@ while(true){
                 cart.push([product, stars, price]);
                 console.log("Product Added")
         }
-        
+        else if (option === "view cart"){
+                if (cart.length === 0){
+                        console.log("Cart is empty")
+                        
+                }
+                else {
+                        console.log("YOUR CART")
+                        for (let items of cart){
+                                console.log(`Product: ${items[0]} Stars: ${items[1]} Price: ${items[2]}`)
+                        }
+                }
+        }
         
         else{
                 console.log("Feature not implemented yet.")
@@ -49,5 +60,8 @@ while(true){
 
 //ROUGH WORK
 
+alpha1 = [['a', 1, 'A'], ['b', 2 , 'B'], ['c', 3, 'C']];
 
-console.log(stars)
+for (let el of alpha1){
+        console.log(el[0])
+}

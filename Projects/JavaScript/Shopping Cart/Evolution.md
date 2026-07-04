@@ -8,3 +8,10 @@
 - Checkout
 - Price based on quality stars
 - Built using arrays, loops, conditions, and functions
+
+## Future Ideas
+
+- Prevent exiting until checkout.
+- Add quantities.
+- Discount coupons.
+- Categories.

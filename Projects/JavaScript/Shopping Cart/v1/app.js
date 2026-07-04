@@ -71,6 +71,33 @@ while(true){
                         
                 }
         }
+        else if (option === "checkout"){
+                let total = 0;
+                if (cart.length === 0){
+                        console.log("Cart is empty")
+                        
+                }
+                else {
+                        console.log("CHECKOUT")
+                        for (let items of cart){
+                                console.log(`Product: ${items[0]}`)
+                                console.log(`Price: ${items[2]}`)
+                                
+                        }
+                        
+                        
+                        for (let idx = 0; idx < cart.length; idx++){
+                                total += cart[idx][2];
+                        }
+                        console.log("================================================================================")
+                        console.log(`Total : ${total}`)
+                        console.log("Thank You For Shopping!!")
+                        let emptyCart = cart.length+1;
+                        cart.splice(0, emptyCart)
+                        
+                        
+                }
+        }
         
         else{
                 console.log("Feature not implemented yet.")
@@ -81,18 +108,3 @@ while(true){
 
 
 
-
-//ROUGH WORK
-
-alpha1 = [['a', 1, 'A'], ['b', 2 , 'B'], ['c', 3, 'C']];
-
-// for (let el of alpha1){
-//         console.log(el[0])
-// }
-let delNumn = 2;
-
-console.log(`Product ${alpha1.splice(delNum , 1)} successfully removed`)
-console.log(alpha1)
-for (let idx = 0; idx < alpha1.length; idx++){
-        console.log(`${idx + 1}. ${alpha1[idx][0]} Stars: ${alpha1[idx][1]}`)
-}

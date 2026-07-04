@@ -22,4 +22,8 @@
 ---
 #### EL 2
 
+Experiment before assuming. I discovered that parseInt() ignores leading and trailing spaces, so trim() isn't necessary for this particular input.
+
+---
+
 

@@ -22,7 +22,7 @@ After finishing the blueprint, ask yourself these three engineering questions:
 
 #### EL 3
 
-<b>Let the loop control repetition, not individual features.</b>
+Let the loop control repetition, not individual features.
 
 ---
 
@@ -31,3 +31,20 @@ After finishing the blueprint, ask yourself these three engineering questions:
 Never assume the user will always do the right thing. Design for mistakes, not just success.
 
 ---
+#### EL 5
+
+Normalize data before validating it.
+
+---
+#### EL 5
+
+When possible, fic the small mistakes where they happen instead of making the user restart the whole process.
+
+---
+
+#### EL 6
+
+Whenever you use prompt(), Ask do need to clean the input using methods like trim, parseInt, toUpperCase.
+
+---
+

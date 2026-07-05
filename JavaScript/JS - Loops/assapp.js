@@ -178,29 +178,79 @@
 // console.log(found);
 
 
-//P3C4
-let words = [
-    "Java",
-    "Python",
-    "AI",
-    "Programming",
-    "Code"
-];
+// //P3C4
+// let words = [
+//     "Java",
+//     "Python",
+//     "AI",
+//     "Programming",
+//     "Code"
+// ];
 
-let count = 0;
+// let count = 0;
 
-for (let word of words) {
+// for (let word of words) {
 
-    word = word.toUpperCase();
+//     word = word.toUpperCase();
 
-    if (word.length >= 4) {
-        count++;
-    }
+//     if (word.length >= 4) {
+//         count++;
+//     }
 
-    if (word === "PROGRAMMING") {
-        break;
-    }
+//     if (word === "PROGRAMMING") {
+//         break;
+//     }
+// }
+
+// console.log(count);
+// console.log(words);
+
+//A4Q1
+
+// let arr=[1,2,3,4,5,6,2,3];
+// let n = 3;
+
+// for (let i = 0; i<arr.length; i++){
+//         if (arr[i] == n){
+//                 arr.splice(i, 1)
+//         }
+// }
+
+// console.log()
+
+//A4Q2
+// let num = 234323568;
+// let count = 0;
+
+
+// while (num > 0) {
+//         count++;
+//         num = Math.floor(num/10);
+// }
+// console.log(count)
+
+//A4Q3
+
+// let Orignum = 234323568;
+// let num = Orignum;
+// let sum = 0;
+
+
+// while (num > 0) {
+        
+//         digit = num % 10;
+//         sum += digit;
+//         num = Math.floor(num/10)
+// }
+// console.log(sum);
+
+//A4Q4
+
+let num = 7;
+let fact = 1;
+while (num > 0) {
+        fact *= num;
+        num--;
 }
 
-console.log(count);
-console.log(words);
+console.log(fact)

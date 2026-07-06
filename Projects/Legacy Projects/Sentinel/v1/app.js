@@ -37,12 +37,12 @@ while(true){
                 }
                 let description =  prompt("Description");
                 description = description.trim();
-                // description = description.toUpperCase();
+                
                 while(description === ""){
                         console.log("Invalid Description. Please try again");
                         description =  prompt("Please Enter Valid Description");
                         description = description.trim();
-                        // description = description.toUpperCase();
+                        
                 }
                 let submission = {};
                 submission.creatorName = creatorName;
@@ -87,12 +87,7 @@ while(true){
                         let decision = prompt("Enter Decision: approve/reject/further review needed");
                         decision = decision.trim();
                         decision = decision.toUpperCase();
-                        // while(decision === ""){
-                        //         console.log("Invalid decision. Please try again");
-                        //         decision =  prompt("Enter Valid Decision");
-                        //         decision = decision.trim();
-                        //         decision = decision.toUpperCase();
-                        // }
+                        
                         while (
                             decision !== "APPROVE" &&
                             decision !== "REJECT" &&

@@ -119,7 +119,7 @@ while(true){
                         selectedSubmission.review = review;
                         selectedSubmission.status = decision;
                         console.log("Review submitted successfully.");
-                        console.log("Preview Summanry");
+                        console.log("Preview Summary");
                         console.log("Reviewer: ", review.reviewerName)
                         console.log("Decision: ", review.decision)
                         console.log("Comment: ", review.comment)
@@ -141,11 +141,26 @@ while(true){
                                 console.log("Invalid Number.");
                                 choice = parseInt(prompt("Please Enter Submission Number"))
                         }
-                        let viewSubmission = submissions[choice - 1];
-                        
+                        let selectedSubmission = submissions[choice - 1];
+                        console.log("=======Submission Details======")
+                        console.log("Creator: ", selectedSubmission.creatorName);
+                        console.log("Title: ", selectedSubmission.title);
+                        console.log("Description: ", selectedSubmission.description);
+                        console.log("Status:", selectedSubmission.status);
+                        if (selectedSubmission.review === undefined){
+                                console.log("Not Reviewed Yet")
+                        }else{
+                                console.log("Reviewer: ", selectedSubmission.review.reviewerName)
+                                console.log("Decision: ", selectedSubmission.review.decision)
+                                console.log("Comment: ", selectedSubmission.review.comment)
+                        }
                 }
         }
         else{
                 console.log("Feature not implemented yet.")
         }
 }
+
+
+let arr = [{a:'a', b:'b', c:{d:'d'}}];
+console.log(arr[0][5])

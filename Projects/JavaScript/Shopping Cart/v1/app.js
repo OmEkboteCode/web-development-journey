@@ -63,7 +63,7 @@ while(true){
                                         console.log("Invalid number. Please try again");
                                         delNum = parseInt(prompt("Please enter the number of the product you want to remove"));
                                 }
-                        cart.splice(delNum - 1, 1)}
+                        cart.splice(delNum - 1, 1)
                         console.log(`Product successfully removed`);
                         for (let idx = 0; idx < cart.length; idx++){
                                 console.log(`${idx + 1}. ${cart[idx][0]}`)

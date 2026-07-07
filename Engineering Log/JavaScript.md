@@ -27,3 +27,15 @@ Experiment before assuming. I discovered that parseInt() ignores leading and tra
 ---
 
 
+### JS Lecture 6 (Fuctions)
+
+#### EL 1
+<i>Whenever you're doing a running total, maximum, minimum, or counts:</i>
+
+- Create the variable before the loop.
+- Update it inside the loop.
+- Return or print it after the loop.
+
+#### EL 2
+
+<i>A function is a reusable, named task that can receive inputs, perform work, and optionally return a result.</i>

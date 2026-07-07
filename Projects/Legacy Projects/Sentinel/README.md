@@ -1,0 +1,1 @@
+"Sentinel is a research-oriented software project exploring how digital work can be submitted, reviewed, and evaluated through workflows that combine human judgment with computational assistance."

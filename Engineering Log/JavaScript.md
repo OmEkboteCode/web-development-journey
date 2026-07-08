@@ -39,3 +39,7 @@ Experiment before assuming. I discovered that parseInt() ignores leading and tra
 #### EL 2
 
 <i>A function is a reusable, named task that can receive inputs, perform work, and optionally return a result.</i>
+
+#### EL 4
+
+<i>A parameter is not a variable from your program. It is a temporary name that the function uses for whatever value you pass into it.</i>

@@ -30,8 +30,6 @@ let displayMenu = () => {
 
 //Feature Functions
 
-
-
 function addProduct() {
   let productName = prompt("Enter Product Name");
   productName = formatText(productName);
@@ -54,31 +52,48 @@ function addProduct() {
   console.log(`${productName} added successfully`);
 }
 
-
-
 function viewCart() {
   displayCart();
 }
 
 function removeProduct() {
-    if (cart.length === 0) {
+  if (cart.length === 0) {
     return displayCart();
-    }
-    displayCart();
-    
-    let delNum = parseInt(
-        prompt("Please enter the number of the product you want to remove"),
-    );
-    while (delNum > cart.length || delNum <= 0) {
+  }
+  displayCart();
+
+  let delNum = parseInt(
+    prompt("Please enter the number of the product you want to remove"),
+  );
+  while (delNum > cart.length || delNum <= 0) {
     console.log("Invalid number. Please try again");
     delNum = parseInt(
-        prompt("Please enter the number of the product you want to remove"),
+      prompt("Please enter the number of the product you want to remove"),
     );
-    }
-    cart.splice(delNum - 1, 1);
-    console.log(`Product successfully removed`);
-    console.log("====YOUR CART====");
-    displayCart();
+  }
+  cart.splice(delNum - 1, 1);
+  console.log(`Product successfully removed`);
+  console.log("====YOUR CART====");
+  displayCart();
+}
+
+function checkout() {
+  let total = 0;
+  if (cart.length === 0) {
+    return displayCart();
+  }
+  console.log("=====CHECKOUT=====");
+  displayCart();
+  for (let idx = 0; idx < cart.length; idx++) {
+    total += cart[idx].price;
+  }
+  console.log(
+    "-------------------------------------------------------------------",
+  );
+  console.log(`Total : ${total}`);
+  console.log("Thank You For Shopping!!");
+  let itemNum = cart.length + 1;
+  cart.splice(0, itemNum);
 }
 
 //Main Loop
@@ -102,6 +117,7 @@ while (running) {
       removeProduct();
       break;
     case 4:
+        checkout()
       break;
     default:
       console.log("Invalid Option. Please try again");

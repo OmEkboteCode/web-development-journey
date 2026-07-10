@@ -1,23 +1,19 @@
 let cart = [];
 
-
 const formatText = (text) => {
   return text.trim().toUpperCase();
 };
 
-
-function displayCart(){
-    if(cart.length === 0){
-        return console.log("Cart is empty")
-    }
-    for (let idx = 0; idx < cart.length; idx++){
-        console.log(`${idx + 1}. ${cart[idx].name} 
+function displayCart() {
+  if (cart.length === 0) {
+    return console.log("Cart is empty");
+  }
+  for (let idx = 0; idx < cart.length; idx++) {
+    console.log(`${idx + 1}. ${cart[idx].name} 
     Stars: ${cart[idx].stars}
-    Price: ${cart[idx].price}`
-        )
-    }
+    Price: ${cart[idx].price}`);
+  }
 }
-
 
 let displayMenu = () => {
   console.log(
@@ -34,37 +30,58 @@ let displayMenu = () => {
 
 //Feature Functions
 
-function addProduct(){
-    let productName = prompt("Enter Product Name");
-        productName = formatText(productName);
-        while (productName === ""){
-            console.log("Invalid product name. Please try again.")
-            productName = prompt("Enter Product Name");
-            productName = formatText(productName);
-        }
-    let stars = parseInt(prompt("Enter the Quality Stars 1-5"));
-        while(stars > 5 || stars < 1){
-            console.log("Invalid Star numbers. Please try again");
-            stars = parseInt(prompt("Enter the Quality Stars 1-5"));
-        }
-        let price = stars * 100;
-        cart.push(
-            {
-                name: productName,
-                stars: stars,
-                price: price
-            }
-        );
-        console.log(`${productName} added successfully`)
+
+
+function addProduct() {
+  let productName = prompt("Enter Product Name");
+  productName = formatText(productName);
+  while (productName === "") {
+    console.log("Invalid product name. Please try again.");
+    productName = prompt("Enter Product Name");
+    productName = formatText(productName);
+  }
+  let stars = parseInt(prompt("Enter the Quality Stars 1-5"));
+  while (stars > 5 || stars < 1) {
+    console.log("Invalid Star numbers. Please try again");
+    stars = parseInt(prompt("Enter the Quality Stars 1-5"));
+  }
+  let price = stars * 100;
+  cart.push({
+    name: productName,
+    stars: stars,
+    price: price,
+  });
+  console.log(`${productName} added successfully`);
 }
 
-function viewCart(){
-    displayCart()
+
+
+function viewCart() {
+  displayCart();
 }
 
+function removeProduct() {
+    if (cart.length === 0) {
+    return displayCart();
+    }
+    displayCart();
+    
+    let delNum = parseInt(
+        prompt("Please enter the number of the product you want to remove"),
+    );
+    while (delNum > cart.length || delNum <= 0) {
+    console.log("Invalid number. Please try again");
+    delNum = parseInt(
+        prompt("Please enter the number of the product you want to remove"),
+    );
+    }
+    cart.splice(delNum - 1, 1);
+    console.log(`Product successfully removed`);
+    console.log("====YOUR CART====");
+    displayCart();
+}
 
 //Main Loop
-
 
 let running = true;
 
@@ -75,13 +92,14 @@ while (running) {
       running = false;
       break;
     case 1:
-        addProduct()
+      addProduct();
       break;
     case 2:
-        console.log("====YOUR CART====")
-        viewCart()
+      console.log("====YOUR CART====");
+      viewCart();
       break;
     case 3:
+      removeProduct();
       break;
     case 4:
       break;

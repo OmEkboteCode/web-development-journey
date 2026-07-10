@@ -5,6 +5,20 @@ const formatText = (text) => {
   return text.trim().toUpperCase();
 };
 
+
+function displayCart(){
+    if(cart.length === 0){
+        return console.log("Cart is empty")
+    }
+    for (let idx = 0; idx < cart.length; idx++){
+        console.log(`${idx + 1}. ${cart[idx].name} 
+    Stars: ${cart[idx].stars}
+    Price: ${cart[idx].price}`
+        )
+    }
+}
+
+
 let displayMenu = () => {
   console.log(
     `=====Shopping Cart V2======
@@ -19,6 +33,7 @@ let displayMenu = () => {
 };
 
 //Feature Functions
+
 function addProduct(){
     let productName = prompt("Enter Product Name");
         productName = formatText(productName);
@@ -31,7 +46,6 @@ function addProduct(){
         while(stars > 5 || stars < 1){
             console.log("Invalid Star numbers. Please try again");
             stars = parseInt(prompt("Enter the Quality Stars 1-5"));
-            
         }
         let price = stars * 100;
         cart.push(
@@ -43,6 +57,13 @@ function addProduct(){
         );
         console.log(`${productName} added successfully`)
 }
+
+function viewCart(){
+    displayCart()
+}
+
+
+//Main Loop
 
 
 let running = true;
@@ -57,6 +78,8 @@ while (running) {
         addProduct()
       break;
     case 2:
+        console.log("====YOUR CART====")
+        viewCart()
       break;
     case 3:
       break;

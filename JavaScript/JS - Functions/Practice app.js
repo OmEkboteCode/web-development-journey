@@ -175,10 +175,119 @@
 //         `
 //         )
 //     }
-    
+
 // }
 
 // printDisplay(students)
 
 
+// let academy = "Sigma Academy";
 
+
+// let studentName = "Unknown";
+
+
+// function createStudentProfile(){
+//     let studentName = "Glacier";
+//     let evaluationScore = 96;
+//     console.log(
+//         `Student: ${studentName}
+// Academy: ${academy}`
+//     )
+// }
+// function createGuestProfile(){
+//     let studentName = "Arya";
+//     console.log(
+//         `Student: ${studentName}
+// Academy: ${academy}`
+//     )
+// }
+// createGuestProfile();
+// createStudentProfile();
+
+// console.log(evaluationScore)
+
+// function() {
+//     console.log("hello")
+// }
+
+// let student = {
+//     studentName: "Glacier",
+//     academy: "Coding Art Online",
+//     score: 97,
+//     studentProfile(){
+//         console.log(`
+//         -----Student Profile-----
+//             Name: ${this.studentName}
+//             Academy: ${this.academy}
+//             Score: ${this.score}`)
+//     },
+//     result(){
+//         if (this.score >= 40){
+//             console.log("Passed");
+//         } else{
+//             console.log("Failed")
+//         }
+//     },
+//     remark(){
+//         if (this.score >= 90){
+//             console.log("Excellent");
+//         }else if(this.score >=40){
+//             console.log("Very Good")
+//         } 
+//         else{
+//             console.log("Good")
+//         }
+//     }
+// }
+
+let book = {
+    title: "Shadow Slave",
+    author: "GuiltyThree",
+    available: true,
+    borrowCount: 1197,
+    showDetails(){
+        console.log(`
+        Title: ${this.title}
+        Author: ${this.author}
+        Available: ${this.available}`
+        )
+    },
+    borrowBook(){
+        if(this.available){
+            console.log("Book is available")
+            this.borrowCount++;
+            this.available = false;
+            
+        } else{
+            console.log("Book is currently unavailable.")
+        }
+    }
+}
+
+function generateDailyReport(){
+    let librarianPassword = "library123";
+    console.log("Book:", book.title)
+    console.log("Borrow Count:", book.borrowCount)
+    console.log("Password:", librarianPassword)
+}
+
+generateDailyReport();
+
+
+
+book.showDetails();
+
+book.borrowBook();
+
+book.showDetails();
+
+book.borrowBook();
+
+// book.returnBook();
+
+book.showDetails();
+
+generateDailyReport();
+
+console.log(librarianPassword);

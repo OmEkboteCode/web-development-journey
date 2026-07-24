@@ -2,6 +2,11 @@ body {
   font-family: Arial;
 }
 
+.red{
+  color: red;
+
+}
+
 #mainImg {
   width: 35%;
 }
@@ -25,4 +30,8 @@ body {
 
 #description {
   background-color: antiquewhite;
+}
+
+.cyanBg{
+  background-color: cyan;
 }
